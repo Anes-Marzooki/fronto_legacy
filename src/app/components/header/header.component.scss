@@ -1,0 +1,29 @@
+.site-menu {
+  li {
+    a {}
+
+    ul {
+      display: none;
+      transition: all 300ms;
+      position: absolute;
+      background: #fff;
+      border-bottom: 2px solid lightblue;
+
+      li {
+        ul {
+          display: none;
+        }
+            &:hover {
+              ul {
+                display: table;
+              }
+      }
+    }
+
+    &:hover {
+      ul {
+        display: table;
+      }
+    }
+  }
+}
